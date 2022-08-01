@@ -29,6 +29,7 @@ body{
     
 .mobile-menu-header{
     display: flex;
+    flex-direction: row;
     justify-content:end;
     align-items: center;
     column-gap:30%;
