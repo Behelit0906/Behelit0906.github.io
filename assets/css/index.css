@@ -9,7 +9,6 @@ html{
 body{
     font-family: 'Barlow Condensed', sans-serif;
     font-size: 16px;
-    color: black;
     background-color: #16ffbd;
     line-height: 2;
 }
@@ -127,6 +126,7 @@ body{
     font-size: 1rem;
     font-weight: 500;
     text-align: center;
+    color: black;
 }
 
 
@@ -143,6 +143,7 @@ body{
 
 .title{
     font-size: 2.5rem;
+    
     font-family: 'Barlow Condensed', sans-serif
 }
 
