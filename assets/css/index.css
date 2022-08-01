@@ -1,0 +1,411 @@
+/* font-family: 'Barlow Condensed', sans-serif;
+font-family: 'Work Sans', sans-serif; */
+
+html{
+    scroll-behavior: smooth;
+}
+
+
+body{
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 16px;
+    background-color: #16ffbd;
+    line-height: 2;
+}
+
+::selection{
+    background-color: #FF8DAC;
+}
+
+.card-header{
+    background-color: red;
+}
+
+/* ----------- MOBILE MENU ---------- */
+.mobile-menu-container{
+    display: none;
+}
+    
+.mobile-menu-header{
+    display: flex;
+    justify-content:end;
+    align-items: center;
+    column-gap:30%;
+    padding: 10px;
+}
+
+.logo{
+    width: 20%;
+    animation: load-navbar 1.4s ease-in-out;
+
+}
+
+.hamburguer-botton{
+    width: 10%;
+    cursor: pointer;
+}
+
+.link{
+    padding: 10px;
+    color: inherit;
+    text-decoration: none;
+    transition: color 0.2s ease-in-out;
+}
+
+.mobile-menu-options-list{
+    display: none;
+    width: 50%;
+    padding: 0;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 5vw;
+    list-style: none;
+}
+
+
+/* ----------- DESKTOP MENU ---------- */
+
+.desktop-menu-container{
+    width: 60%;
+    min-width: 450px;
+    margin-left: auto;
+    margin-right: auto;
+    animation: load-navbar 1.5s ease-in-out;
+}
+
+.desktop-menu-options-list{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    margin-top: 11%;
+    padding: 10px;
+
+    font-size: 1.7rem;
+    list-style: none;
+}
+
+.desktop-menu-item{
+    width: 15%;
+    
+    text-align: center;
+    
+}
+
+.desktop-menu-logo{
+    width: 20%;
+    margin: 0 5%;
+    
+}
+
+
+
+/* ----------- VIDEO ---------- */
+
+.video-container{
+    height: 45vw;
+    margin-top: 17%;
+    margin-bottom: 4%;
+    transform-origin: 0 0;
+    transform: skewY(-10deg);
+    overflow: hidden;
+    
+}
+
+.video{
+    overflow: hidden;
+    width: 100%;
+    transform: skewY(10deg) scale(1.4); ;
+}
+
+
+/* ----------- COMMON STYLES ---------- */
+.font-styles{
+    font-family: 'Work Sans', sans-serif;
+    font-size: 1rem;
+    font-weight: 500;
+    text-align: center;
+}
+
+
+
+/* ----------- INTRO SECTION ---------- */
+
+.intro-section{
+    width: 30%;
+    min-width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 7%;
+}
+
+.title{
+    font-size: 2.5rem;
+    font-family: 'Barlow Condensed', sans-serif
+}
+
+
+/* ----------- WORK SECTION ----------- */
+
+.works-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 12vw;
+}
+
+.works-grid{
+    width: 100%;
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    transform-origin: 0 0;
+    transform: skewY(-10deg);
+}
+
+
+.cell{
+    position: relative;
+    overflow: hidden;
+    height: 18vw;
+}
+
+
+.cell-image{
+    position: absolute;
+    top: -11%;
+    width: 100%;
+    
+}
+
+.cell-image, .info{
+    transform: skewY(10deg) scale(1.3);
+    
+}
+
+.info{
+    height: 100%;
+    padding-top: 20%;
+    position: relative;
+    z-index: 10;
+    font-size: 1.3vw;
+    line-height: 1;
+    color: white;
+    text-align: center;
+    opacity: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    transition: opacity 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.font-verde{
+    color: #16ffbd;
+}
+
+/* ----------- SKILLS SECTION ----------- */
+.skills-container{
+    width: 50%;
+    margin: 0 auto 20% auto; 
+}
+
+.skill-descriptions{
+    display: flex;
+    justify-content: space-between;
+    column-gap: 5%;
+}
+
+
+/* ----------- FOOTER ----------- */
+.footer{
+    width: 100%;
+    padding-top: 8%;
+    padding-bottom: 13%;
+    transform-origin: 0 0;
+    transform: skewY(-10deg);
+    background-color: black;
+    color: white;
+}
+
+.footer-title{
+    transform: skewY(10deg);
+}
+
+.footer-flex{
+    display: flex;
+    padding: 0 3%;
+    min-height: 50%;
+    justify-content: space-between;
+    font-size: 1.2rem;
+    text-align: left;
+    line-height: 1.2;
+    transform: skewY(10deg);
+}
+
+.footer-right-part{
+    text-align: right;
+}
+
+.footer-icons-container{
+    display: flex;
+    justify-content: center;
+    column-gap: 10%;
+}
+
+.footer-icon{
+    display: block;
+    width: 26%;
+    
+    min-width: 30px;
+    cursor: pointer;
+}
+
+
+
+
+/* ----------- MINI STYLES ----------- */
+.font-green{
+    color:#16ffbd;
+}
+
+.text-center{
+    text-align: center;
+}
+
+
+
+
+/* ----------- CURTAIN ----------- */
+.curtain{
+    position:fixed;
+    top: -20%;
+    z-index: 20;
+    width: 100vw;
+
+    background-color: #FF8DAC;
+    transform: skewY(-10deg);
+    animation: curtain-down 2s ease-in-out;
+}
+
+
+.display{
+    display: block;
+}
+
+
+@media screen and (max-width:900px) {
+    .desktop-menu-options-list{
+        font-size: 1.3rem;
+    }
+
+    .intro-section{
+        font-size: 14px;
+    }
+    
+    .title{
+        font-size: 1.7rem;
+    }
+
+    .skill-descriptions{
+        flex-direction: column;
+    }
+
+    .footer-icon{
+        width: 10%;
+        max-width: 50px;
+    }
+
+    .footer-flex{
+        text-align: center;
+        flex-direction: column;
+        
+    }
+
+    .footer-right-part{
+        text-align: inherit;
+    }
+    
+}
+
+@media screen and (max-width:460px){
+    .mobile-menu-container{
+        display: block;
+    }
+
+    .desktop-menu-container{
+        display: none;
+    }
+
+    .works-grid{
+        grid-template-columns: 1fr 1fr;
+    
+    }
+
+    .cell{
+        height: 13vh;
+    }
+
+    .last-cell{
+        position: relative;
+        left: 50%;
+
+    }
+
+    .cell-image{
+        transform: skewY(10deg) scale(1.6);
+    }
+
+    .info{
+        padding: 6.5vh;
+    }
+    
+}
+
+@media (hover:hover){
+    .link:hover{
+        color: #FF8DAC;
+    }
+    .info:hover{
+        opacity: 1;
+    }
+
+    
+
+    .info:hover .info-text{
+        animation: bounce 0.4s ease-in-out;
+    }
+}
+
+@keyframes load-navbar {
+    from {
+        transform: scale(0);
+    }
+    to{
+        transform: scale(1);
+    }
+}
+
+@keyframes bounce {
+    0%{
+        transform: translateY(8vw);
+    }
+    80%{
+        transform: translateY(-3vw);
+    }
+    100%{
+        transform: translateY(0vw);
+    }
+
+}
+
+@keyframes curtain-down{
+    0%{
+        height: 0;
+    }
+    50%{
+        height: 140vh;
+    }
+    100%{
+        height: 0;
+    }
+
+}
