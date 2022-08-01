@@ -9,6 +9,7 @@ html{
 body{
     font-family: 'Barlow Condensed', sans-serif;
     font-size: 16px;
+    color: black;
     background-color: #16ffbd;
     line-height: 2;
 }
